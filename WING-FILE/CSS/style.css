@@ -2,6 +2,142 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Island+Moments&family=Italianno&family=Lobster&family=Loved+by+the+King&family=Mea+Culpa&family=Michroma&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&family=Uncial+Antiqua&display=swap');
 
-h1 {
-   font-family: 'Andika', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Andika', sans-serif;
+}
+
+:root {
+   --branco: #f3f3ec;
+   --vermelho: rgb(169, 190, 177);
+   --verde-escuro: rgb(28, 74, 62);
+   --verde-claro: rgb(50, 133, 111);
+   --marrom: rgb(47, 33, 14);
+}
+
+body {
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 414px;
+    height: 100dvh;
+    background-color: var(--branco);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    left: 0%;
+    bottom: -10%;
+    width: 100%;
+}
+
+.logo img{
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+    left: 34%;
+    top: 10%;
+}
+
+.text {
+    position: relative;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.text h1 {
+    color: var(--verde-escuro);
+    font-weight: 400;
+    font-size: 45pt;
+}
+
+.text p {
+    color: var(--marrom);
+    font-size: 15pt;
+}
+
+.button {
+    position: absolute;
+    width: 75%;
+    padding: 15px;
+    bottom: 17%;
+    background-color: var(--verde-escuro);
+    border: 1px solid var(--verde-escuro);
+    border-radius: 30px;
+    color: var(--branco);
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Figtree', sans-serif;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    border: 2px solid var(--branco);
+    background: var(--verde-claro);
+    }
+
+.button:active {
+    border-color: var(--verde-escuro);
+    background-color: var(--branco);
+    color: var(--verde-escuro);
+}
+
+.create-account {
+    position: absolute;
+    bottom: 10%;
+    color: var(--branco);
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+    color: var(--verde-escuro);
+}
+
+.create-account:active {
+    text-align: var(--branco);
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 20px 0;
+  }
+
+  .container {
+    height: 844px; 
+    border-radius: 40px;
+    border: 8px solid rgb(11, 53, 39);
+    box-shadow: 25px 25px 50px 10px rgba(0, 0, 0, 0.274); 
+  }
+
 }
