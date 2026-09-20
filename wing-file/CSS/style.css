@@ -27,9 +27,11 @@ body {
 
 main {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -42,20 +44,28 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    overflow: hidden;
+    position: relative; /* Mantém o fundo preso aqui dentro */
+    overflow: hidden;   /* Corta a imagem nas bordas arredondadas */
 }
 
-.background {
+/* IMAGEM DE FUNDO PRESA DENTRO DO CELULAR */
+.fullscreen-bg {
+    background-image: url('../images/background.jpeg');
     position: absolute;
-    left: 0%;
-    bottom: -10%;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: 0; /* Fica no fundo do container */
 }
 
-.logo img{
+/* CONTEÚDO (Logo, Textos e Botões acima da imagem) */
+.logo img {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     width: 35%;
     left: 34%;
     top: 10%;
@@ -63,7 +73,7 @@ main {
 
 .text {
     position: relative;
-    margin-top: 40%;
+    margin-top: -90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,12 +107,13 @@ main {
     font-family: 'Figtree', sans-serif;
     transition: background-color 0.5s ease, border-color 0.5s ease;
     text-decoration: none;
+    z-index: 2;
 }
 
 .button:hover {
     border: 2px solid var(--branco);
     background: var(--verde-claro);
-    }
+}
 
 .button:active {
     border-color: var(--verde-escuro);
@@ -117,6 +128,7 @@ main {
     font-size: 17px;
     text-decoration: none;
     font-family: 'Figtree', sans-serif;
+    z-index: 2;
 }
 
 .create-account:hover {
@@ -125,7 +137,7 @@ main {
 }
 
 .create-account:active {
-    text-align: var(--branco);
+    color: var(--branco);
 }
 
 @media (min-width: 600px) {
@@ -139,5 +151,4 @@ main {
     border: 8px solid rgb(11, 53, 39);
     box-shadow: 25px 25px 50px 10px rgba(0, 0, 0, 0.274); 
   }
-
 }

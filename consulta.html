@@ -4,27 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Login</title>
-    <link rel="stylesheet" href="wing-file/CSS/style.css">
+    <link rel="stylesheet" href="wing-file/CSS/style4.css">
+    <script src="https://kit.fontawesome.com/8c2b73c7be.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Psicólogos</h1>
-            <div class="nav-bar">
-                <p>Buscar</p>
-            </div>
-            <div class="char">
-                <div class="all">Todos</div>
-                <div class="online">Online</div>
-                <div class="presential">Presencial</div>
-            </div>
+
+                <div class="bar">
+                    <input type="search" class="nav-bar" name="nav-bar" id="" placeholder="Buscar por nome, especialidade..."> 
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </div>
         </header>
         <main>
-
             
-            <a href="introduction.html" type="button" class="button">Começar</a>
+            <div class="cards-wrapper">
+                <div class="card">
+                      <div class="avatar-container">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="card-content">
+                        <div class="header-row">
+                          <h3 class="name">Camila Souza</h3>
+                          <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                        <p class="crp">CRP 06/123456</p>
+                        <p class="specialties">Ansiedade • Depressão • Autoconhecimento</p>
+                        
+                        <div class="footer-row">
+                          <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+                <span class="reviews-count">(120)</span>
+                          </div>
+                          <span class="badge badge-green">Online e Presencial</span>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="card">
+                      <div class="avatar-container">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="card-content">
+                        <div class="header-row">
+                          <h3 class="name">Gabriela Lima</h3>
+                          <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </div>
+                        <p class="crp">CRP 06/234567</p>
+                        <p class="specialties">TCC • Estresse • Relacionamentos</p>
+                        
+                        <div class="footer-row">
+                          <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9</span>
+                <span class="reviews-count">(98)</span>
+                          </div>
+                          <span class="badge badge-gray">Online</span>
+                        </div>
+                      </div>
+                    </div>
 
-            <a href="#" class="create-account">Já tenho uma conta</a>
+                     <div class="bar2">
+                    <a href="home.html" type="button">
+                        <i class="fa-solid fa-house-chimney" id="house"></i>
+                    </a>
+                    <a href="#" type="button">
+                        <i class="fa-solid fa-seedling" id="plant2"></i>
+                    </a>
+                    <a href="#" type="button">
+                         <i class="fa-regular fa-calendar-days" id="calendar2"></i>
+                    </a>
+                    <a href="#" type="button">
+                        <i class="fa-regular fa-user" id="peaple2"></i>
+                    </a>
+                    <div class="topics">
+                         <p class="names" id="then">Inicio</p>
+                         <p class="names">Rotina</p>
+                         <p class="names">Agenda</p>
+                         <p class="names">Perfil</p>
+                    </div>
+
+                </div>
+            </div>
         </main>
     </div>
 </body>

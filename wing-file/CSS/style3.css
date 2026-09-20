@@ -374,6 +374,77 @@ footer {
     cursor: pointer;
 }
 
+.bar {
+    margin-top: 530px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 500px;
+    height: 800px;
+    border-radius: 25px;
+    box-shadow: 0px -3px 20px rgba(14, 14, 14, 0.24);
+}
+
+.bar a {
+    margin-right: 48px;
+    text-decoration: none;
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
+.bar p {
+    font-size: 10pt;
+    font-weight: 400;
+    color: rgb(172, 172, 172);
+    margin-left: 2px;
+}
+
+#house {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 48px;
+}
+
+#plant2 {
+    font-size: 25px;
+    margin-top: 20px;
+     margin-left: 2px;
+    color: rgb(172, 172, 172);
+}
+
+#calendar2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(172, 172, 172);
+}
+
+#peaple2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 4px;
+    color: rgb(172, 172, 172);
+}
+
+.topics {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    margin-top: 12%;
+    cursor: pointer;
+}
+
+.topics p {
+    margin-left: 45px;
+}
+
+
+
+#then {
+    color: var(--verde-escuro);
+    cursor: pointer;
+}
+
 .container {
     width: 100%;
     max-width: 414px;
